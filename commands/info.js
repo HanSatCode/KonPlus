@@ -14,7 +14,7 @@ module.exports = {
 			.addFields(
 				{ name: 'Build', value: 'RTS-Alpha', inline: true },
 				{ name: 'Status', value: '22122516', inline: true },
-				{ name: 'Devel-Lang', value: 'JS, Node.JS', inline: true },
+				{ name: 'Language', value: 'Node.JS', inline: true },
 			);
 		await interaction.reply({ embeds: [infoEmbed], ephemeral: true });
 	},
