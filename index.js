@@ -34,7 +34,7 @@ client.on('interactionCreate', async interaction => {
 	}
 	catch (error) {
 		console.error(error);
-		await interaction.reply({ content: '알 수 없는 오류가 발생하였습니다.', ephemeral: true });
+		await interaction.reply({ content: '예상치 못한 오류가 발생하였습니다.', ephemeral: true });
 	}
 });
 
