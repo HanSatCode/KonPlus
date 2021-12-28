@@ -27,7 +27,6 @@ module.exports = {
 				.setDescription('이모지 이름 | 모른다면 아무거나 쳐서 도움말을 보는것도 정답')
 				.setRequired(true)),
 	async execute(interaction) {
-		console.log(interaction.options.getString('name'));
 		if (emojiFiles.includes(`${interaction.options.getString('name')}`)) {
 			const emojiFile = new MessageAttachment(`./src/emoji/${interaction.options.getString('name')}.gif`);
 			await interaction.reply({ files: [emojiFile] });
