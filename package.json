@@ -1,22 +1,32 @@
 {
   "dependencies": {
-    "@discordjs/builders": "^0.9.0",
-    "@discordjs/rest": "^0.1.0-canary.0",
-    "discord-api-types": "^0.25.2",
-    "discord.js": "^13.3.1",
+    "@discordjs/builders": "^0.11.0",
+    "@discordjs/rest": "^0.2.0-canary.0",
+    "discord-api-types": "^0.26.1",
+    "discord.js": "^13.5.0",
     "dotenv": "^10.0.0"
   },
   "devDependencies": {
-    "eslint": "^8.4.1"
+    "eslint": "^8.6.0",
+    "nodemon": "^2.0.15"
   },
   "name": "konplus",
   "version": "0.0.1-Alpha",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HanSatCode/KonPlus.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HanSatCode/KonPlus/issues"
+  },
+  "homepage": "https://github.com/HanSatCode/KonPlus#readme",
   "description": ""
 }
