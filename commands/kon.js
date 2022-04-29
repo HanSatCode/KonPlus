@@ -1,6 +1,7 @@
 const fs = require('fs');
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { MessageAttachment, MessageEmbed } = require('discord.js');
+const { gen, rat, ktj } = require('../configTheme.json');
 
 module.exports = {
 	data: new SlashCommandBuilder()
@@ -10,8 +11,9 @@ module.exports = {
 			option.setName('theme')
 				.setDescription('이모지 주제')
 				.setRequired(true)
-				.addChoice('원신', 'gen')
-				.addChoice('땃쥐', 'rat'))
+				.addChoice(gen, 'gen')
+				.addChoice(rat, 'rat')
+				.addChoice(ktj, 'ktj'))
 		.addStringOption(option =>
 			option.setName('name')
 				.setDescription('이모지 이름')
@@ -39,8 +41,9 @@ module.exports = {
 			const emojifEmbed = new MessageEmbed()
 				.setColor('#ff8080')
 				.setTitle(`'${interaction.options.getString('name')}'(이)가 등록되어 있지 않음`)
-				.setDescription(`사용 가능한 이모지는 다음 목록과 같습니다.\n\n${emojiFilesName}`);
-			await interaction.reply({ embeds: [emojifEmbed], ephemeral: true });
+				.setDescription(`사용 가능한 이모지는 다음 목록과 같습니다.\n\n${emojiFilesName}`)
+				.setThumbnail('attachment://how.gif');
+			await interaction.reply({ embeds: [emojifEmbed], files: ['./src/system/how.gif'], ephemeral: true });
 		}
 	},
 };
