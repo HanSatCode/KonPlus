@@ -15,3 +15,7 @@ Calculates the ping difference between the local computer where the bot is runni
 > Del
 
 Erases up to 100 posts by the bot in the last 14 days at a time.
+
+> Zoom (WIP)
+
+In real time, the custom emoji registered on each Discord server is loaded and uploaded as a large-sized image.
