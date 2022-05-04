@@ -8,7 +8,7 @@
   },
   "devDependencies": {
     "eslint": "^8.14.0",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.16"
   },
   "name": "konplus",
   "version": "1.0.0",
