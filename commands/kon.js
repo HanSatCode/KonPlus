@@ -11,9 +11,11 @@ module.exports = {
 			option.setName('theme')
 				.setDescription('이모지 주제')
 				.setRequired(true)
-				.addChoice(gen, 'gen')
-				.addChoice(rat, 'rat')
-				.addChoice(ktj, 'ktj'))
+				.addChoices(
+					{ name : gen, value : 'gen' },
+					{ name :rat, value : 'rat' },
+					{ name : ktj, value : 'ktj' },
+				))
 		.addStringOption(option =>
 			option.setName('name')
 				.setDescription('이모지 이름')
