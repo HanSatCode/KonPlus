@@ -1,7 +1,7 @@
 const fs = require('fs');
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { MessageAttachment, MessageEmbed } = require('discord.js');
-const { gen, rat, ktj } = require('../configTheme.json');
+const { gen, rat, ktj, kne } = require('../configTheme.json');
 
 module.exports = {
 	data: new SlashCommandBuilder()
@@ -15,6 +15,7 @@ module.exports = {
 					{ name : gen, value : 'gen' },
 					{ name :rat, value : 'rat' },
 					{ name : ktj, value : 'ktj' },
+					{ name : kne, value : 'kne' },
 				))
 		.addStringOption(option =>
 			option.setName('name')
